@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: url('/images/pattern-background-desktop.svg') no-repeat;
+    background-color: rgb(222, 231, 255);    
+}
+
+.container{
+    width: 25vw;
+    height: 80vh;
+    border-radius: 20px;
+    position: absolute;
+    left: 37vw;
+    top: 12%;
+    box-shadow: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px rgb(215, 225, 252);
+}
+#box-image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 25vw;
+}
+
+#header{
+    font-size: 27px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-weight:bolder;
+}
+
+#text{
+    text-align: center;
+    color:lightslategrey;
+    padding-bottom: 30px;
+    font-size: 16px
+}
+
+.testimonial-col img{
+    border-radius: 100px;
+    height: 45px;
+    margin-left: 15%;
+    margin-right: 4%;
+
+}
+
+.testimonial-col{
+    display: flex;
+    flex-basis: 40%;
+}
+
+.testimonial-col h5{
+    padding: 2px;
+}
+
+.testimonial-col p{
+    padding: 2px;
+    color:lightslategrey;
+    font-size: 13px;
+}
+
+.testimonial-col a{
+    margin-left: 25%;
+    font-size: 12px;
+    color: hsl(245, 75%, 52%);
+    margin-top: 10px;
+    font-weight: 700;
+}
+.testimonial-col a:hover{
+    text-decoration: none;
+    color: hsl(252, 91%, 67%);
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    bottom: 0px;
+    margin: auto;
+    margin-top: 13%;
+    width: 80%;
+}
+#btn1{
+    padding: 15px;
+    background: none;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 10px hsl(240, 76%, 90%);
+}
+#btn1:hover{
+    background-color: hsl(252, 91%, 67%);
+}
+#btn2{
+    cursor: pointer;
+    padding: 15px;
+    background: none;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    color:lightslategray
+}
+#btn2:hover{
+    color:black
+}
+
+@media (max-width: 380px) {
+    .container{
+        width: 85vw;
+        height: 75vh;
+        border-radius: 20px;
+        position: absolute;
+        left: 7.5vw;
+        top: 9%;
+        box-shadow: 5px;
+    }
+    #box-image{
+        width: 85vw;
+    }
+    #header{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #text{
+        text-align: center;
+        color:lightslategrey;
+        padding-bottom: 30px;
+        font-size: 13px;
+    }
+    .testimonial-col a{
+        margin-left: 15%;
+    }
+    #btn1{
+        margin-bottom: 8px;
+    
+    }    
+}
+
+@media (max-width: 1033)
+{
+    .testimonial-col{
+       flex-direction: column; 
+    }
+}
